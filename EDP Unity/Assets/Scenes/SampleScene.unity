@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -181,7 +181,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 755480468}
-  m_PlaneDistance: 300
+  m_PlaneDistance: 400
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1826,7 +1826,7 @@ GameObject:
   - component: {fileID: 388353895}
   - component: {fileID: 388353894}
   m_Layer: 5
-  m_Name: Background
+  m_Name: BackgroundCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2022,7 +2022,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.9150943, g: 0.082013145, b: 0.082013145, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -2042,7 +2042,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2062,7 +2062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755480466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2042}
+  m_LocalPosition: {x: 0, y: 0, z: -2610}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2380,7 +2380,7 @@ PrefabInstance:
     - target: {fileID: 2874167723447094820, guid: 5a51ecefe802a954bbbff0ea6f1e09da,
         type: 3}
       propertyPath: m_Name
-      value: Background
+      value: BackgroundCam
       objectReference: {fileID: 0}
     - target: {fileID: 2874167723447094821, guid: 5a51ecefe802a954bbbff0ea6f1e09da,
         type: 3}
@@ -2487,11 +2487,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2874167723447094822, guid: 5a51ecefe802a954bbbff0ea6f1e09da,
-        type: 3}
-      propertyPath: m_AspectMode
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2874167723447094823, guid: 5a51ecefe802a954bbbff0ea6f1e09da,
         type: 3}
       propertyPath: m_Color.r
@@ -2506,6 +2501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874167723447094822, guid: 5a51ecefe802a954bbbff0ea6f1e09da,
+        type: 3}
+      propertyPath: m_AspectMode
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
