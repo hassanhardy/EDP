@@ -8,17 +8,30 @@ public class InstantiateBoard : MonoBehaviour
     public GameObject MainGame;
     public Transform Trigger;
     private GameObject MainGameInstance;
-    // Start is called before the first frame update
-    void Start()
-    {
-        MainGameInstance = Instantiate(MainGame, Trigger.position, Trigger.rotation);
-    }
+    bool instantiated = false;
+
 
     // Update is called once per frame
     void Update()
     {
-        MainGameInstance.transform.position = Trigger.transform.position;
-        MainGameInstance.transform.rotation = Trigger.transform.rotation;
+        if (Input.GetKey(KeyCode.T) && instantiated == false)
+        {
+            MainGameInstance = Instantiate(MainGame, Trigger.position, Trigger.rotation);
+            instantiated = true;
+        }
+
+        if(instantiated == true)
+        {
+            MainGameInstance.transform.position = Trigger.transform.position;
+            MainGameInstance.transform.rotation = Trigger.transform.rotation;
+        }
+
+
+        if(Input.GetKey(KeyCode.Y) && instantiated == true)
+        {
+            Destroy(MainGameInstance);
+            instantiated = false;
+        }
         
     }
 }
